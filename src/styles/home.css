@@ -1,0 +1,226 @@
+.list {
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem;
+    position: relative;
+}
+
+.side {
+    position: absolute;
+    left: 0;
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    min-width: 40rem;
+    /* margin-left: -2rem; */
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(36, 35, 35);
+}
+
+button {
+    width: 7.5rem;
+    height: 2.5rem;
+    background-color: rgba(71, 71, 71, 0.842);
+    border: none;
+    color: white;
+    margin-left: -17rem;
+    border-radius: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.popular {
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: 15rem;
+}
+h3{
+    font-size: 2.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(36, 35, 35);
+}
+.card-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 10rem;
+    height: 12rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  .card:hover{
+    cursor: pointer;
+  }
+  .newarrivals{
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: 15rem;
+  }
+  .newcards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    width: 22rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .card-images {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .card-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+  }
+  
+  .product-card:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    display: none;
+  }
+  
+  .product-card:hover .heart {
+    display: block;
+  }
+  
+  .select-option {
+    flex: 1;
+    background: rgb(27, 27, 27);
+    padding: 8px 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    animation: fadeInDown 1s ease-in-out;
+    margin-top: 5rem;
+  }
+  .quick-view {
+    flex: 1;
+    background: rgb(27, 27, 27);
+    /* padding: 8px 12px; */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    animation: fadeInDown 1s ease-in-out;
+    width: 100%;
+    height: 2.5rem;
+    padding-top: 0.8rem;
+    margin-top: 4rem;
+  }
+  .select-option:hover, .quick-view:hover {
+    background: rgba(119, 119, 119, 0.9);
+  }
+  
+  .card-details {
+    padding: 15px;
+  }
+  
+  .price {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .stars {
+    color: gold;
+    margin: 5px 0;
+  }
+  
+  .color-options {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .color-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #ddd;
+  }
+  
