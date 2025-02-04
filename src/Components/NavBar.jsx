@@ -4,7 +4,13 @@ import { Link } from 'react-router-dom'
 import { GoPerson, GoHeart, GoMail } from "react-icons/go";
 import { FiSearch } from "react-icons/fi";
 import { BsTelephone } from "react-icons/bs";
+import Login from '../Components/login';
+import { useState } from 'react';
 const NavBar = () => {
+    const [model, setModel] = useState();
+    const handlelogin = () =>{
+        setModel(!model);
+    }
     return (
         <div>
             <div className="above">
@@ -62,7 +68,9 @@ const NavBar = () => {
                     <Link to="/vendor" className='nav-link'><li>Vendors</li></Link>
                     <Link to="/about" className='nav-link'><li>Blog</li></Link>
                     <Link to="/contact" className='nav-link'><li>Contact</li></Link>
-                    <Link to="/login" className='nav-link'><li>Login</li></Link>
+                   <div className="login">
+                    {model && <Login handlelogin={handlelogin}/> }
+                    <li onClick={handlelogin}>Login</li></div> 
                 </div>
                 <div className='button'><BsTelephone />800-123-4567</div>
             </div>

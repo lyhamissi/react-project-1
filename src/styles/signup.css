@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.form {
+.forms {
     display: flex;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.37);
@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 2000;
 }
 
 .login-form h3 {
