@@ -8,7 +8,7 @@ import Login from '../Components/login';
 import { useState } from 'react';
 const NavBar = () => {
     const [model, setModel] = useState();
-    const handlelogin = () =>{
+    const handlelogin = () => {
         setModel(!model);
     }
     return (
@@ -34,7 +34,8 @@ const NavBar = () => {
                 </div>
                 <div className="icons">
                     <div className="icon-wrapper">
-                        <GoPerson className="icon" />
+                        {model && <Login handlelogin={handlelogin} />}
+                        <GoPerson onClick={handlelogin} className="icon" />
                     </div>
                     <div className="icon-wrapper">
                         <GoMail className="icon" />
@@ -68,9 +69,6 @@ const NavBar = () => {
                     <Link to="/vendor" className='nav-link'><li>Vendors</li></Link>
                     <Link to="/about" className='nav-link'><li>Blog</li></Link>
                     <Link to="/contact" className='nav-link'><li>Contact</li></Link>
-                   <div className="login">
-                    {model && <Login handlelogin={handlelogin}/> }
-                    <li onClick={handlelogin}>Login</li></div> 
                 </div>
                 <div className='button'><BsTelephone />800-123-4567</div>
             </div>

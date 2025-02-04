@@ -11,7 +11,7 @@ const login = ({ handlelogin }) => {
     return (
         <div>
         {signup && <Signup handlesignup={handlesignup} />}
-            <d..cdiv className="form">
+            <div className="form">
 
                 <form action="" method="post" class="login-form">
                     <div className="ico">
