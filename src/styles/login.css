@@ -27,21 +27,21 @@
 }
 
 .login-form {
-    width: 35rem;
+    width: 45rem;
     background-color: rgb(255, 255, 255);
-    height: 25rem;
+    height: 30rem;
     border-radius: 1rem;
 }
 
 .login-form input {
-    width: 25rem;
+    width: 30rem;
     padding: 0.75rem;
     border: 0.0625rem solid #ccc;
-    border-radius: 0.5rem;
+    border-radius: 7.5rem;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
-    margin-left: 4rem;
+    margin-left: 3rem;
     margin-top: 2rem;
 }
 
@@ -56,7 +56,7 @@
     border: none;
     font-size: 1.125rem;
     cursor: pointer;
-    margin-left: 13rem;
+    margin-left: 3rem;
     transition: background 0.3s;
     margin-top: 0.5rem;
 }
@@ -70,11 +70,12 @@
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 23rem;
+    margin-left: 20rem;
 }
 .login-form a:hover{
     text-decoration: underline;
     color: #00567f;
+    cursor: pointer;
 }
 .signup-link {
     font-size: 1rem;
@@ -102,7 +103,9 @@
 }
 .icos{
     margin-right: 4rem;
+    cursor: pointer;
 }
 .signup-link span {
     cursor: pointer;
+    margin-top: -1rem;
 }
