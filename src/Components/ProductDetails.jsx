@@ -4,8 +4,8 @@ import '../styles/home.css';
 import { products } from './Home';
 const ProductDetails = () => {
 const { id } = useParams();
-const product = products.find((p) => p.id === parseInt(id));
-if (!product) {
+const prod = products.find((prod) => prod.id == id);
+if (!prod) {
     return <h6 style={{ color: "red", fontSize: "1.5rem" }}>Error:Product not found!!</h6>
 }
 return (
