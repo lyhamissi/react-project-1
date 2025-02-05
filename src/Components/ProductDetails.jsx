@@ -6,7 +6,7 @@ const ProductDetails = () => {
 const { id } = useParams();
 const product = products.find((p) => p.id === parseInt(id));
 if (!product) {
-    return <h2>Product not found</h2>
+    return <h6 style={{ color: "red", fontSize: "1.5rem" }}>Error:Product not found!!</h6>
 }
 return (
     <div>
