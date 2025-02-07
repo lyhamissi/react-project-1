@@ -233,11 +233,3 @@ h3 {
   display: inline-block;
   border: 1px solid #ddd;
 }
-.newcardss {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-margin-top: 2rem;
-margin-bottom: 5rem;
-}
