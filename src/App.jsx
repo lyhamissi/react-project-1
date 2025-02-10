@@ -7,6 +7,7 @@ import Vendor from './Components/Vendor';
 import Contact from './Components/Contact';
 import About from './Components/About';
 import ProductDetails from './Components/ProductDetails';
+import ProductDetail from './Components/ProductDetail';
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
               <Route path='/about' element={<About/>}/>
               <Route path='/contact' element={<Contact/>}/>
               <Route path='/singleproduct/:id' element={<ProductDetails/>}/>
+              <Route path='/product/:ids' element={<ProductDetail/>}/>
               </Route>
         </Routes>
       </BrowserRouter>

@@ -11,93 +11,98 @@ import image12 from '../assets/headset.jpg';
 import image13 from '../assets/cream.jpg';
 import image14 from '../assets/cam.jpg';
 import image15 from '../assets/shoes.jpg';
+import { useNavigate } from 'react-router-dom';
+export const Card = [
+  {
+    ids: 1,
+    pic1: image7,
+    title: "All In One Bottle",
+    cost: "$22.00 – $55.00",
+    ratings: 4,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 2,
+    pic1: image8,
+    title: "Amazon Alexa",
+    cost: "$49.00 – $69.00",
+    ratings: 3,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 3,
+    pic1: image9,
+    title: "Headset Gamer",
+    cost: "$22.00 – $55.00",
+    ratings: 5,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 4,
+    pic1: image12,
+    title: "Headset Gamer Legion Plus",
+    cost: "$22.00 – $55.00",
+    ratings: 5,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 5,
+    pic1: image11,
+    title: "JDoe’s Styling Watch  ",
+    cost: "$22.00 – $33.00",
+    ratings: 5,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 6,
+    pic1: image14,
+    title: "Jessi Cam Recorder",
+    cost: "$22.00 – $55.00",
+    ratings: 5,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 7,
+    pic1: image15,
+    title: "John Sport Shoes",
+    cost: "$22.00 – $55.00",
+    ratings: 5,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 8,
+    pic1: image10,
+    title: "Mouse Raxer 3000DPI",
+    cost: "$22.00 – $55.00",
+    ratings: 4,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+  {
+    ids: 9,
+    pic1: image13,
+    title: "Santa Monica Facial Cream",
+    cost: "$22.00 – $55.00",
+    ratings: 5,
+    color: ["#6B705C", "#B08968", "#EDEDED"]
+  },
+]
 const Shops = () => {
-  const Card = [
-    {
-      ids: 1,
-      pic1: image7,
-      title: "All In One Bottle",
-      cost: "$22.00 – $55.00",
-      ratings: 4,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 2,
-      pic1: image8,
-      title: "Amazon Alexa",
-      cost: "$49.00 – $69.00",
-      ratings: 3,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 3,
-      pic1: image9,
-      title: "Headset Gamer",
-      cost: "$22.00 – $55.00",
-      ratings: 5,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 4,
-      pic1: image12,
-      title: "Headset Gamer Legion Plus",
-      cost: "$22.00 – $55.00",
-      ratings: 5,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 5,
-      pic1: image11,
-      title: "JDoe’s Styling Watch  ",
-      cost: "$22.00 – $33.00",
-      ratings: 5,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 6,
-      pic1: image14,
-      title: "Jessi Cam Recorder",
-      cost: "$22.00 – $55.00",
-      ratings: 5,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 7,
-      pic1: image15,
-      title: "John Sport Shoes",
-      cost: "$22.00 – $55.00",
-      ratings: 5,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 8,
-      pic1: image10,
-      title: "Mouse Raxer 3000DPI",
-      cost: "$22.00 – $55.00",
-      ratings: 4,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-    {
-      ids: 9,
-      pic1: image13,
-      title: "Santa Monica Facial Cream",
-      cost: "$22.00 – $55.00",
-      ratings: 5,
-      color: ["#6B705C", "#B08968", "#EDEDED"]
-    },
-  ]
   const [price, setPrice] = React.useState(79);
 
   const handlePriceChange = (event) => {
     setPrice(event.target.value);
   };
+  const navigate = useNavigate();
+  const handleNavigation = (ids) => {
+    navigate(`/product/${ids}`)
+  }
 
   return (
     <div>
       <div className='shop'>
         <h1 className='shops'>Shop</h1>
         <img src={image1} alt="" />
-        
+
       </div>
       <div className="shop-container">
         <div className="sides">
@@ -168,7 +173,7 @@ const Shops = () => {
                   <div className="overlay">
                     <div className="heart"><GoHeart className='icon' /></div>
                     <div className="select-options">Select Option</div>
-                    <div className="quick-views">Quick View</div>
+                    <div className="quick-views" onClick={() => handleNavigation(product.ids)}>Quick View</div>
                   </div>
                 </div>
                 <div className="cards-details">
