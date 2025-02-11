@@ -69,6 +69,7 @@ const NavBar = () => {
                     <Link to="/vendor" className='nav-link'><li>Vendors</li></Link>
                     <Link to="/about" className='nav-link'><li>Blog</li></Link>
                     <Link to="/contact" className='nav-link'><li>Contact</li></Link>
+                    <Link to="/addproduct" className='nav-link'><li>Add Product</li></Link>
                 </div>
                 <div className='button'><BsTelephone />800-123-4567</div>
             </div>
