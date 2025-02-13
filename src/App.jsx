@@ -9,6 +9,8 @@ import About from './Components/About';
 import ProductDetails from './Components/ProductDetails';
 import ProductDetail from './Components/ProductDetail';
 import AddProduct from './Components/AddProduct';
+import DashboardLayout from './Dashboard/DashboardLayout';
+import DashoboardView from './Dashboard/DashoboardView';
 function App() {
   return (
     <>
@@ -24,6 +26,9 @@ function App() {
             <Route path='/singleproduct/:id' element={<ProductDetails />} />
             <Route path='/product/:ids' element={<ProductDetail />} />
             <Route path='/addproduct' element={<AddProduct/>}/>
+          </Route>
+          <Route path='/' element={<DashboardLayout/>}>
+          <Route path='/dashboard' index element={<DashoboardView/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

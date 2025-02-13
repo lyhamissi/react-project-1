@@ -60,12 +60,12 @@ label {
     margin-top: 0.3125rem;
 }
 
-#sub {
+.sub {
     background-color: #5555ff;
     color: white;
     border: none;
     padding: 0.625rem 0.9375rem;
-    margin-top: 0.625rem;
+    margin-top: 5rem;
     cursor: pointer;
     border-radius: 0.3125rem;
 }
