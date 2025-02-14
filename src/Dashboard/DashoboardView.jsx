@@ -54,7 +54,7 @@ const DashoboardView = () => {
       </div>
       <div className="title"><h3>Sales Overview</h3>
         {/* <h3 className='visitor'>Visitors</h3> */}
-        </div>
+      </div>
       <div className="widgetts">
 
         <div className="chart"> <Chart /></div>
@@ -86,8 +86,8 @@ const DashoboardView = () => {
                 <td>{product.price}</td>
                 <td>{product.stock}</td>
                 <td>{product.status}</td>
-                <td><MdModeEdit /></td>
-                <td><MdDelete /></td>
+                <td><MdModeEdit className='edit' /></td>
+                <td><MdDelete className='delete' /></td>
               </tr>
             ))}
           </tbody>
@@ -115,8 +115,8 @@ const DashoboardView = () => {
               <td>Blandine</td>
               <td>Yes</td>
               <td>Pending</td>
-              <td><MdModeEdit /></td>
-              <td><MdDelete /></td>
+              <td><MdModeEdit className='edit' /></td>
+              <td><MdDelete className='delete' /></td>
             </tr>
             <tr>
               <td>2</td>
@@ -124,8 +124,8 @@ const DashoboardView = () => {
               <td>Afua</td>
               <td>Yes</td>
               <td>Shipped</td>
-              <td><MdModeEdit /></td>
-              <td><MdDelete /></td>
+              <td><MdModeEdit className='edit' /></td>
+              <td><MdDelete className='delete' /></td>
             </tr>
           </tbody>
 

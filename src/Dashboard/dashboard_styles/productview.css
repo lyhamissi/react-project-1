@@ -36,7 +36,12 @@ tbody tr:nth-child(even) {
   margin-right: 10px;
   border-radius: 5px;
 }
-
+.edit{
+  color: blue;
+}
+.delete{
+  color: red;
+}
 .top {
   display: flex;
 }

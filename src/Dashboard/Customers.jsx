@@ -30,8 +30,8 @@ const Customers = () => {
                             <td>$250</td>
                             <td>Kigali-Rwanda</td>
                             <td>2025-16-4</td>
-                            <td><MdModeEdit /></td>
-                            <td><MdDelete /></td>
+                            <td><MdModeEdit className='edit' /></td>
+                            <td><MdDelete className='delete' /></td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -41,8 +41,8 @@ const Customers = () => {
                             <td>$50</td>
                             <td>Kigali-Rwanda</td>
                             <td>2025-02-1</td>
-                            <td><MdModeEdit /></td>
-                            <td><MdDelete /></td>
+                            <td><MdModeEdit className='edit' /></td>
+                            <td><MdDelete className='delete' /></td>
                         </tr>
                     </tbody>
 

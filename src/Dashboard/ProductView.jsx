@@ -32,8 +32,8 @@ const ProductView = () => {
                             <td>{product.price}</td>
                             <td>{product.stock}</td>
                             <td>{product.status}</td>
-                            <td><MdModeEdit/></td>
-                            <td><MdDelete/></td>
+                            <td><MdModeEdit className='edit'/></td>
+                            <td><MdDelete className='delete'/></td>
                         </tr>
                         ))}
                     </tbody>

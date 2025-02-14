@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdModeEdit,MdDelete } from 'react-icons/md'
+import { MdModeEdit, MdDelete } from 'react-icons/md'
 
 const Orders = () => {
     return (
@@ -26,8 +26,8 @@ const Orders = () => {
                             <td>Blandine</td>
                             <td>Yes</td>
                             <td>Pending</td>
-                            <td><MdModeEdit /></td>
-                            <td><MdDelete /></td>
+                            <td><MdModeEdit className='edit' /></td>
+                            <td><MdDelete className='delete' /></td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -35,8 +35,8 @@ const Orders = () => {
                             <td>Afua</td>
                             <td>Yes</td>
                             <td>Shipped</td>
-                            <td><MdModeEdit /></td>
-                            <td><MdDelete /></td>
+                            <td><MdModeEdit className='edit' /></td>
+                            <td><MdDelete className='delete' /></td>
                         </tr>
                     </tbody>
 

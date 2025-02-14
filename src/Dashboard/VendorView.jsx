@@ -1,12 +1,12 @@
 import React from 'react'
 import { stores } from '../Components/Vendor'
-import { MdModeEdit, MdDelete,MdAdd } from "react-icons/md";
+import { MdModeEdit, MdDelete, MdAdd } from "react-icons/md";
 const VendorView = () => {
     return (
         <div>
             <div className="top">
                 <h3>Sellers</h3>
-                <button type="submit" className='add'><MdAdd className='plus'/>Add Vendor</button>
+                <button type="submit" className='add'><MdAdd className='plus' />Add Vendor</button>
             </div>
             <div className="table-section">
                 <table>
@@ -24,8 +24,8 @@ const VendorView = () => {
                                 <td>{store.id}</td>
                                 <td><img src={store.profile} className="product-img" />{store.name}</td>
                                 <td>{store.location}</td>
-                                <td><MdModeEdit /></td>
-                                <td><MdDelete /></td>
+                                <td><MdModeEdit className='edit' /></td>
+                                <td><MdDelete className='delete' /></td>
                             </tr>
                         ))}
 
