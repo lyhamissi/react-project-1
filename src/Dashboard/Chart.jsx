@@ -1,43 +1,41 @@
-import React from 'react'
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Legend } from "recharts";
+import React from 'react';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+
 const data = [
-    {
-        "name": "Product A",
-        "product": 4000,
-        "sales": 2400
-    },
-    {
-        "name": "Product B",
-        "product": 3000,
-        "sales": 1398
-    },
-    {
-        "name": "Product C",
-        "product": 2000,
-        "sales": 9800
-    },
-    {
-        "name": "Product D",
-        "product": 2780,
-        "sales": 3908
-    }
+    { name: 'Product A', pv: 500 },
+    { name: 'Product B', pv: 1000 },
+    { name: 'Product C', pv: 2500 },
+    { name: 'Product D', pv: 1500 },
+    { name: 'Product E', pv: 3000 },
+    { name: 'Product F', pv: 2000 },
+    { name: 'Product G', pv: 4500 },
 ];
 
-const Chart = () => {
+const Charts = () => {
     return (
-        <div>
-            <BarChart width={650} height={300} data={data}>
-                <CartesianGrid strokeDasharray="2 2" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="product" fill="#8884d8" />
-                <Bar dataKey="sales" fill="#82ca9d" />
-            </BarChart>
-            
-        </div>
-    )
-}
+        <div className="chartcontainer">
+        <ResponsiveContainer width="110%" height={300}>
+            <AreaChart data={data} margin={{ top:2, right: 55, left: -20, bottom: 0 }}>
+                <defs>
+                    <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stopColor="#0a1172" stopOpacity={1} />
+                        <stop offset="100%" stopColor="#60a3bc" stopOpacity={0.8} />
+                    </linearGradient>
+                </defs>
 
-export default Chart
+                <XAxis dataKey="name"  tick={{ fill: "#333", fontSize: 14}} className='axis-text'/>
+                <YAxis  tick={{ fill: "#333", fontSize: 14}} className='axis-text' />
+                <Tooltip />
+                <Area 
+                    type="monotone" 
+                    dataKey="pv" 
+                    stroke="#0a1172" 
+                    fill="url(#areaGradient)" 
+                />
+            </AreaChart>
+        </ResponsiveContainer>
+        </div>
+    );
+};
+
+export default Charts;

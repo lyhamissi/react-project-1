@@ -11,6 +11,12 @@ import ProductDetail from './Components/ProductDetail';
 import AddProduct from './Components/AddProduct';
 import DashboardLayout from './Dashboard/DashboardLayout';
 import DashoboardView from './Dashboard/DashoboardView';
+import ProductView from './Dashboard/ProductView';
+import Orders from './Dashboard/Orders';
+import Contacts from './Dashboard/Contacts';
+import VendorView from './Dashboard/VendorView';
+import Customers from './Dashboard/Customers';
+import Settings from './Dashboard/Settings';
 function App() {
   return (
     <>
@@ -29,6 +35,12 @@ function App() {
           </Route>
           <Route path='/' element={<DashboardLayout/>}>
           <Route path='/dashboard' index element={<DashoboardView/>}/>
+          <Route path='/productview' element={<ProductView/>}/>
+          <Route path='/orders' element={<Orders/>}/>
+          <Route path='/contactview' element={<Contacts/>}/>
+          <Route path='/vendorview' element={<VendorView/>}/>
+          <Route path='/customers' element={<Customers/>}/>
+          <Route path='/settings' element={<Settings/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

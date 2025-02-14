@@ -1,0 +1,79 @@
+.table-section {
+  margin-top: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  justify-content: left;
+  color: gray;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.top {
+  display: flex;
+}
+
+.add {
+  margin-left: 54rem;
+  background-color: rgb(76, 0, 255);
+  width: 10rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.plus {
+  color: white;
+  margin-right: 0.1rem;
+}
+
+body.dark-theme .table-section,
+body.dark-theme .add {
+  background-color: #181818;
+  box-shadow: 0 0 5px rgb(80, 80, 80);
+}
+
+body.dark-theme th {
+  background-color: #181818;
+  color: white;
+}
+
+body.light-theme td body.light-theme td {
+  padding: 0.75rem;
+  text-align: left;
+  justify-content: left;
+  color: gray;
+  background: #f0f0f0;
+}
+
+body.dark-theme tbody tr:nth-child(even) {
+  background-color:#0e0d0dc2 ;
+  color: white;
+}

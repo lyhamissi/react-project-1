@@ -10,53 +10,60 @@ import owner2 from '../assets/owner2.jpg'
 import owner3 from '../assets/owner3.jpg'
 import owner4 from '../assets/owner4.jpg'
 import owner5 from '../assets/owner5.jpg'
-import owner6 from '../assets/owner6.jpg'
+import owner6 from '../assets/vendor6.jpg'
 import '../styles/vendor.css';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+export   const stores = [
+  {
+    id:1,
+    name: "John Doe's Store",
+    src: vendor1,
+    profile: owner1,
+    rating: 5,
+    location: "Central Park, New York, United States (US)",
+  },
+  {
+    id:2,
+    name: "Jessica's Store",
+    src: vendor2,
+    profile: owner2,
+    rating: 4,
+    location: "132 My Street, Kingston, NY 12401",
+  },
+  {
+    id:3,
+    name: "Santa Monica's Store",
+    src: vendor3,
+    profile: owner3,
+    rating: 4.5,
+    location: "789 Pine Avenue, Apt 4B, Springfield, IL 62701, USA",
+  },
+  {
+    id:4,
+    name: "Digital Good's Store",
+    src: vendor4,
+    profile: owner4,
+    rating: 4.5,
+    location: "401 East Benton Place, Chicago, IL 60601",
+  },
+  {
+    id:5,
+    name: "The Glass Store",
+    src: vendor5,
+    profile: owner5,
+    rating: 3.5,
+    location: "501-521 Fashion Ave, New York, NY 10018, USA",
+  },
+  {
+    id:6,
+    name: "Mr. George's Store",
+    src: vendor6,
+    profile: owner6,
+    rating: 5,
+    location: "1313 E Main St, Portage, MI 49024-2001",
+  }
+];
 const Vendor = () => {
-  const stores = [
-    {
-      name: "John Doe's Store",
-      src: vendor1,
-      profile: owner1,
-      rating: 5,
-      location: "Central Park, New York, United States (US)",
-    },
-    {
-      name: "Jessica's Store",
-      src: vendor2,
-      profile: owner2,
-      rating: 4,
-      location: "Central Park,New York, United States(US)",
-    },
-    {
-      name: "Santa Monica's Store",
-      src: vendor3,
-      profile: owner3,
-      rating: 4.5,
-      location: "Central Park,New York, United States(US)",
-    },
-    {
-      name: "Digital Good's Store",
-      src: vendor4,
-      profile: owner4,
-      rating: 4.5,
-      location: "Central Park,New York, United States(US)",
-    },
-    {
-      name: "The Glass Store",
-      src: vendor5,
-      profile: owner5,
-      location: "Central Park,New York, United States(US)",
-    },
-    {
-      name: "John Doe's Store",
-      src: vendor6,
-      profile: owner6,
-      rating: 5,
-      location: "Central Park,New York, United States(US)",
-    }
-  ];
   return (
     <div>
       <h1 className='About'>Store List</h1>

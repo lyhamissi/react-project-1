@@ -20,6 +20,8 @@ export const products = [
     rating: 3,
     colors: ["#6B705C", "#B08968", "#EDEDED"],
     image: image7,
+    status:"Active",
+    stock:"100",
   },
   {
     id: 2,
@@ -28,6 +30,8 @@ export const products = [
     rating: 5,
     colors: ["#EDEDED", "#000000"],
     image: image8,
+    status:"Coming",
+    stock:"10",
   },
   {
     id: 3,
@@ -36,6 +40,19 @@ export const products = [
     rating: 4,
     colors: ["#6B705C", "#B08968", "#EDEDED"],
     image: image9,
+    status:"Active",
+    stock:"58"
+
+  },
+  {
+    id: 4,
+    name: "Wtach",
+    price: "$22.00 – $55.00",
+    rating: 1,
+    colors: ["#6B705C", "#B08968", "#EDEDED"],
+    image: image5,
+    status:"Out of Stock",
+    stock:"0"
   },
 ];
 const Home = () => {

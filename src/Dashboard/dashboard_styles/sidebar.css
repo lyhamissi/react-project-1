@@ -135,7 +135,7 @@ body.light-theme{
     color: rgb(76, 0, 255);
   }
   body.dark-theme{
-    background-color: rgb(76, 0, 255);
+    background-color: #181818;
     color: white;
   }
   body.light-theme .sidebar,
@@ -148,7 +148,7 @@ body.light-theme{
   body.dark-theme .icon, 
   body.dark-theme li,
   body.dark-theme .nav-icon{
-    background-color: rgb(76, 0, 255);
+    background-color: #181818;
     color: white;
   }
   body.dark-theme h3{
@@ -158,10 +158,13 @@ body.light-theme{
     color: white;
   }
   body.dark-theme li:hover {
-    background: rgba(42, 1, 129, 0.527);
+    background: #181818;
     color: white;
 }
 body.dark-theme .main-content{
-    background-color:rgba(81, 0, 255, 0.945) ;
+    background-color:#181818e8 ;
     
+}
+body.dark-theme .show-btn{
+    background: #1818188c;
 }

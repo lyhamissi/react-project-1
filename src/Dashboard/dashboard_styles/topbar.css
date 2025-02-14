@@ -1,7 +1,7 @@
   .theme-toggle {
       cursor: pointer;
       font-size: 1.5rem;
-      right: 13rem;
+      right: 5rem;
       position: fixed;
       color: rgb(76, 0, 255);
       background: none;
@@ -9,7 +9,7 @@
   }
   .notifications{
     position: fixed;
-    right: 10rem;
+    right: 2rem;
     font-size: 1.5rem;
   }
 
@@ -44,7 +44,7 @@
 
   .navbar {
       width: 100%;
-      height: 4rem;
+      height: 8rem;
       background: rgb(255, 255, 255);
       color: rgb(76, 0, 255);
       display: flex;
@@ -61,11 +61,11 @@
     color: rgb(76, 0, 255);
   }
   body.dark-theme{
-    background-color: rgb(76, 0, 255);
+    background-color: #181818;
     color: white;
   }
   body.dark-theme .navbar{
-    background-color: rgb(76, 0, 255);
+    background-color: #181818;
     color: white;
   }
   body.dark-theme .search-box{
@@ -76,4 +76,16 @@
   body.dark-theme input::placeholder,
   body.dark-theme .theme-toggle{
     color: white;
+  }
+  body.dark-theme .main-content p{
+    -webkit-text-fill-color: rgb(243, 243, 243);
+  }
+  body.dark-theme td{
+    
+    -webkit-text-fill-color: rgba(243, 243, 243, 0.897);
+  }
+  body.dark-theme span,
+  body.dark-theme .axis-text{
+    fill: rgba(243, 243, 243, 0.897);
+    -webkit-text-fill-color: rgba(243, 243, 243, 0.897);
   }

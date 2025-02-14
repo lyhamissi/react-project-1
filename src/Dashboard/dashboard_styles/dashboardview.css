@@ -1,35 +1,106 @@
 .widget {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    justify-content: center;
-  }
-  h2{
-    color: rgb(76,0, 255);
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
-  .widgets {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
-  }
-  .chart {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .widgetts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
-  }
-  .title{
-    display: flex;
-    width: 100%;
-  }
-  .title h3{
-    margin-right: 25rem;
-  }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.icon-container::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background: gray;
+  border-radius: 50%;
+}
+
+.ordericon {
+  color: white;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.text-container {
+  margin-left: 2rem;
+}
+
+.title {
+  color: rgb(109, 109, 109);
+  font-size: 1.9rem;
+}
+
+.count {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: -1.5rem;
+  color: rgb(82, 81, 81);
+}
+
+
+h3 {
+  font-size: 2rem;
+}
+
+
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.chart {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 36rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.widgetts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.title {
+  display: flex;
+  width: 100%;
+}
+
+.title h3 {
+  margin-right: 28rem;
+  font-size: 2rem;
+}
+.visitor{
+  /* position: fixed; */
+  margin-left: 20rem;
+}
+body.dark-theme .widget,
+body.dark-theme .chart {
+  background-color: #181818;
+  color: white;
+  box-shadow: 0 0 5px rgb(80, 80, 80);
+}
+
+body.dark-theme .widget h2 {
+  color: white;
+}
