@@ -8,7 +8,7 @@ import Contact from './Components/Contact';
 import About from './Components/About';
 import ProductDetails from './Components/ProductDetails';
 import ProductDetail from './Components/ProductDetail';
-import AddProduct from './Components/AddProduct';
+import AddProduct from './Dashboard/AddProduct';
 import DashboardLayout from './Dashboard/DashboardLayout';
 import DashoboardView from './Dashboard/DashoboardView';
 import ProductView from './Dashboard/ProductView';
@@ -31,7 +31,6 @@ function App() {
             <Route path='/contact' element={<Contact />} />
             <Route path='/singleproduct/:id' element={<ProductDetails />} />
             <Route path='/product/:ids' element={<ProductDetail />} />
-            <Route path='/addproduct' element={<AddProduct/>}/>
           </Route>
           <Route path='/' element={<DashboardLayout/>}>
           <Route path='/dashboard' index element={<DashoboardView/>}/>
@@ -41,6 +40,7 @@ function App() {
           <Route path='/vendorview' element={<VendorView/>}/>
           <Route path='/customers' element={<Customers/>}/>
           <Route path='/settings' element={<Settings/>}/>
+          <Route path='/addproduct' element={<AddProduct/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

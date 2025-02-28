@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react';
 import '../styles/home.css'
 import image1 from '../assets/product1.jpg'
@@ -20,8 +20,8 @@ export const products = [
     rating: 3,
     colors: ["#6B705C", "#B08968", "#EDEDED"],
     image: image7,
-    status:"Active",
-    stock:"100",
+    status: "Active",
+    stock: "100",
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ export const products = [
     rating: 5,
     colors: ["#EDEDED", "#000000"],
     image: image8,
-    status:"Coming",
-    stock:"10",
+    status: "Coming",
+    stock: "10",
   },
   {
     id: 3,
@@ -40,8 +40,8 @@ export const products = [
     rating: 4,
     colors: ["#6B705C", "#B08968", "#EDEDED"],
     image: image9,
-    status:"Active",
-    stock:"58"
+    status: "Active",
+    stock: "58"
 
   },
   {
@@ -51,9 +51,10 @@ export const products = [
     rating: 1,
     colors: ["#6B705C", "#B08968", "#EDEDED"],
     image: image5,
-    status:"Out of Stock",
-    stock:"0"
+    status: "Out of Stock",
+    stock: "0"
   },
+
 ];
 const Home = () => {
   // const [selectProduct, setSelectProduct] = useState();
@@ -62,6 +63,13 @@ const Home = () => {
     navigation(`/singleproduct/${id}`)
   }
 
+  // const [products, setProducts] = useState([]);
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/product/getAllProduct")
+  //     .then(response => response.json())
+  //     .then(data => setProducts(data))
+  //     .catch(error => console.error("Error Fetching prducts",error));
+  // }, []);
   const items = [
     { src: image1, text: "Body Lotion" },
     { src: image2, text: "Sports" },
@@ -117,8 +125,8 @@ const Home = () => {
               </div>
             </div>
             <div className="card-details">
-              <h3>{product.name}</h3>
-              <p className="price">{product.price}</p>
+              <h3>{product.productName}</h3>
+              <p className="price">$:{product.price}</p>
               <div className="stars">
                 {"★".repeat(product.rating)}
                 {"☆".repeat(5 - product.rating)}

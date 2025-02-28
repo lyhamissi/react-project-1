@@ -94,7 +94,7 @@ const Shops = () => {
   };
   const navigate = useNavigate();
   const handleNavigation = (ids) => {
-    navigate(`/product/${ids}`)
+    navigate  (`/product/${ids}`)
   }
 
   return (
@@ -153,7 +153,7 @@ const Shops = () => {
 
           </div>
         </div>
-        <div className="main-content">
+        <div className="main-conten">
           <div className="top-bar">
             <span>Showing 1-9 of 13 results</span>
             <select className="sort-dropdown">

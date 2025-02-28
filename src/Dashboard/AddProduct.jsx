@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import '../styles/login.css';
+import './dashboard_styles/login.css';
 import { IoClose } from 'react-icons/io5';
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
@@ -27,11 +27,11 @@ const AddProduct = () => {
     }
     return (
         <div>
-            <div className="productforms">
-            <form action="" method="post" className='login-form'onSubmit={handleSubmit(onSubmit)}>
-                <div className="ico">
+            <div className="icoss">
                     <h3>Add Product</h3>
                 </div>
+            <div className="productformss">
+            <form action="" method="post" className='login-form'onSubmit={handleSubmit(onSubmit)}>
                 <input
                     {...register("productTitle", { required: true})}
                     type="text"
@@ -55,7 +55,7 @@ const AddProduct = () => {
                     type="text"
                     placeholder='Product Content'
                     name='productContent' />
-                <button type="submit" className='login-btn'>Save</button>
+                <button type="submit" className='login-btns'>Save</button>
             </form>
             </div>
         </div>

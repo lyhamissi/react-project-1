@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 import './dashboard_styles/productview.css'
 import { MdModeEdit, MdDelete,MdAdd } from "react-icons/md";
 import { products } from '../Components/Home';
@@ -7,7 +8,7 @@ const ProductView = () => {
         <div>
             <div className="top">
                 <h3>List of Products</h3>
-                <button type="submit" className='add'><MdAdd className='plus'/>Add Product</button>
+                <button type="submit" className='add'><Link to="/addproduct" className="nav-links"><MdAdd className='plus'/>Add Product</Link></button>
             </div>
             <div className="table-section">
                 <table>

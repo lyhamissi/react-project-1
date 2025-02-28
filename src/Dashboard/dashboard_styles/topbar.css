@@ -1,91 +1,106 @@
   .theme-toggle {
-      cursor: pointer;
-      font-size: 1.5rem;
-      right: 5rem;
-      position: fixed;
-      color: rgb(76, 0, 255);
-      background: none;
-      width: 2rem;
-  }
-  .notifications{
-    position: fixed;
-    right: 2rem;
+    cursor: pointer;
     font-size: 1.5rem;
+    right: 3rem;
+    position: absolute;
+    color: rgb(76, 0, 255);
+    background: none;
+    width: 2rem;
+    top: 4.5%;
+    transform: translateY(-50%);
+  }
+
+  .notifications {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+    top: 4.3%;
+    transform: translateY(-50%);
   }
 
   .input {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      background: transparent;
-      height: 1.8rem;
-      width: 25rem;
-      border: none;
-      margin-left: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: transparent;
+    height: 1.8rem;
+    width: 25rem;
+    border: none;
+    margin-left: 2rem;
   }
 
   .search-box {
-      position: relative;
-      display: flex;
-      align-items: center;
-      border: 1px solid blue;
-      border-radius: 0.5rem;
-      padding: 0.5rem;
-      width: 35rem;
-      margin-left: 3.5rem;
-      height: 1.8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 35rem;
+    margin-left: 3.5rem;
+    /* top: -15%; */
+    height: 1.8rem;
   }
 
   .search-icon {
-      position: absolute;
-      left: 10px;
-      font-size: 1.2rem;
-      color: gray;
-      cursor: pointer;
+    position: absolute;
+    left: 10px;
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
   }
 
   .navbar {
-      width: 100%;
-      height: 8rem;
-      background: rgb(255, 255, 255);
-      color: rgb(76, 0, 255);
-      display: flex;
-      align-items: center;
-      padding: 0 1rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 8rem;
+    background: rgb(255, 255, 255);
+    color: rgb(76, 0, 255);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  .main-content h3{
+
+  .main-content h3 {
     color: rgb(76, 0, 255);
     margin-left: 3rem;
   }
-  body.light-theme{
+
+  body.light-theme {
     background-color: white;
     color: rgb(76, 0, 255);
   }
-  body.dark-theme{
+
+  body.dark-theme {
     background-color: #181818;
     color: white;
   }
-  body.dark-theme .navbar{
+
+  body.dark-theme .navbar {
     background-color: #181818;
     color: white;
   }
-  body.dark-theme .search-box{
+
+  body.dark-theme .search-box {
     border: 1px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
   }
-  body.dark-theme .search-icon, 
+
+  body.dark-theme .search-icon,
   body.dark-theme input::placeholder,
-  body.dark-theme .theme-toggle{
+  body.dark-theme .theme-toggle {
     color: white;
   }
-  body.dark-theme .main-content p{
+
+  body.dark-theme .main-content p {
     -webkit-text-fill-color: rgb(243, 243, 243);
   }
-  body.dark-theme td{
-    
+
+  body.dark-theme td {
+
     -webkit-text-fill-color: rgba(243, 243, 243, 0.897);
   }
+
   body.dark-theme span,
-  body.dark-theme .axis-text{
+  body.dark-theme .axis-text {
     fill: rgba(243, 243, 243, 0.897);
     -webkit-text-fill-color: rgba(243, 243, 243, 0.897);
   }
